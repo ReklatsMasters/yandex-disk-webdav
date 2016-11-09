@@ -11,5 +11,5 @@ RUN mkdir -p /mnt/yandex && echo "https://webdav.yandex.ru /mnt/yandex davfs use
 
 # add startup script to mount yandex webdav
 RUN mkdir -p /etc/my_init.d
-ADD start.sh /etc/my_init.d/yandex.sh
+ADD yandex.sh /etc/my_init.d/yandex.sh
 RUN chmod +x /etc/my_init.d/yandex.sh
